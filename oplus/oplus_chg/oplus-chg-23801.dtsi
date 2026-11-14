@@ -1011,6 +1011,7 @@
 		oplus_spec,external_gauge_support;
 		oplus_spec,voocphy_bidirect_cp_support;
 		oplus_spec,voocphy_current_default = <91>;
+		oplus_spec,ap_control_allow;
 
 		oplus_spec,svooc_cool_down_current_limit = <100 15 15 20 25 30 35 40 45 50 55 60 63 65 70 75 80 85 100>;
 		oplus_spec,vooc_cool_down_current_limit = <60 20 20 20 30 40 50 60>;
@@ -1768,6 +1769,7 @@
 		compatible = "oplus,plc_charge";
 		oplus,plc_support = <CHG_PROTOCOL_UFCS>;
 		oplus,plc_soc = <90>;
+		oplus,plc_support_timeout;
 		oplus,plc_strategy-data = <&buck_simple_strategy>;
 		oplus,plc_strategy-names = "default";
 
